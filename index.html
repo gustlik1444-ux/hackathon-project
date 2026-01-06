@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Path Memory Game - 12x12</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    
+
+    <h1>Memory Path</h1>
+    <p>Watch the path, then repeat the sequence.</p>
+
+    <div class="game-container">
+        <div id="grid"></div>
+
+        <div class="controls">
+            <div class="setting-group">
+                <label for="mode">Game Mode</label>
+                <select id="mode">
+                    <option value="random">Randomized Path</option>
+                    <option value="set">Set Pattern (Level 1)</option>
+                </select>
+            </div>
+            
+            <div class="setting-group">
+                <label>Path Length: <span id="diff-val">8</span> steps</label>
+                <input type="range" id="length" min="3" max="25" value="8">
+            </div>
+
+            <button id="start-btn">Start Game</button>
+            
+            <div id="status-message" style="margin-top: 20px; text-align: center; color: var(--highlight-color);">
+                </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>

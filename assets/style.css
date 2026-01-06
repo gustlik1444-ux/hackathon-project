@@ -1,11 +1,111 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+    --bg-color: #1a1a2e;
+    --tile-color: #16213e;
+    --highlight-color: #4ecca3;
+    --error-color: #e94560;
+    --text-color: #eeeeee;
+    --panel-bg: #0f3460;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.game-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(12, 40px);
+    grid-template-rows: repeat(12, 40px);
+    gap: 5px;
+    background: var(--panel-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    background-color: var(--tile-color);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.tile:hover {
+    background-color: #24345d;
+}
+
+.tile.active {
+    background-color: var(--highlight-color);
+    box-shadow: 0 0 15px var(--highlight-color);
+}
+
+.tile.wrong {
+    background-color: var(--error-color);
+}
+
+.controls {
+    background: var(--panel-bg);
+    padding: 25px;
+    border-radius: 8px;
+    width: 280px;
+    height: fit-content;
+}
+
+.setting-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+select, input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--highlight-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(0);
 }
