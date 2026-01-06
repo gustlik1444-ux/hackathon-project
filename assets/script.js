@@ -11,6 +11,7 @@ const CONFIG = {
 // ===============================
 const grid = document.getElementById('grid');
 const startBtn = document.getElementById('start-btn');
+const resetBtn = document.getElementById('reset-btn'); // Reference for Reset Button
 const statusMsg = document.getElementById('status-message');
 
 // ===============================
@@ -120,6 +121,7 @@ async function startGame() {
     stopTimer();
     userPath = [];
     isPlayerTurn = false;
+    grid.classList.remove('disabled'); // Ensure grid is clickable
 
     // Clear any previous visual states
     tiles.forEach(t => t.classList.remove('active', 'wrong'));
@@ -174,27 +176,47 @@ function handleTileClick(index) {
     const expectedIndex = gamePath[userPath.length];
 
     if (index === expectedIndex) {
-        // Correct selection
-        tiles[index].classList.add('active');
-        userPath.push(index);
+        // Correct selection: Clicking a cell adds the next step
+        tiles[index].classList.add('active'); // Selected cells show a visible trail
+        userPath.push(index); // Input order is tracked
 
         // Check if user has completed the entire sequence
         if (userPath.length === gamePath.length) {
             stopTimer();
             statusMsg.innerText = `Perfect! Finished in ${secondsElapsed} seconds.`;
             isPlayerTurn = false;
+            grid.classList.add('disabled'); // Disable clicking once complete
         }
     } else {
         // Incorrect selection
         stopTimer();
         tiles[index].classList.add('wrong');
-        statusMsg.innerText = "Incorrect! Press Start to try again.";
+        statusMsg.innerText = "Incorrect! Press 'Reset Attempt' or 'Start Game'.";
         isPlayerTurn = false;
+        grid.classList.add('disabled'); // Disable clicking once attempt is complete
     }
+}
+
+// ===============================
+// Reset Attempt Logic
+// ===============================
+function resetAttempt() {
+    // Player can reset the current attempt without restarting the entire game
+    userPath = [];
+    isPlayerTurn = true;
+    grid.classList.remove('disabled');
+    statusMsg.innerText = "Attempt reset! Try again...";
+
+    // Clear visual trail and errors
+    tiles.forEach(t => t.classList.remove('active', 'wrong'));
+    
+    // Restart the timer for the new attempt
+    startTimer();
 }
 
 // ===============================
 // Initialization
 // ===============================
 startBtn.addEventListener('click', startGame);
+resetBtn.addEventListener('click', resetAttempt); // Listener for Reset Attempt
 createGrid();

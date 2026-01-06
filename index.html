@@ -23,6 +23,13 @@
 
         <!-- Right-side control panel -->
         <div class="controls">
+        <button id="start-btn">Start Game</button>
+    
+        <button id="reset-btn" style="margin-top: 10px; background-color: var(--tile-color); color: white;">Reset Attempt</button>
+    
+        <div id="status-message" style="margin-top: 20px; text-align: center; color: var(--highlight-color);">
+        </div>
+</div>
 
             <!-- Game mode selection -->
             <div class="setting-group">
@@ -38,9 +45,6 @@
                 <label>Path Length: <span id="diff-val">8</span> steps</label>
                 <input type="range" id="length" min="3" max="25" value="8">
             </div>
-
-            <!-- Start button -->
-            <button id="start-btn">Start Game</button>
             
             <!-- Status messages (e.g., "Your turn!", "Game Over") -->
             <div id="status-message" style="margin-top: 20px; text-align: center; color: var(--highlight-color);">

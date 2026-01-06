@@ -135,4 +135,10 @@ button:active {
   transform: translateY(0);
 }
 
+/* Ensure disabled state is visually clear */
+#grid.disabled .tile {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 /* hamza form test */
