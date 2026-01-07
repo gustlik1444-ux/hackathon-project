@@ -1,4 +1,3 @@
-
 # Pattern Memory Game - Hackathon-project
 
 [Play the game here](Add the live site link here)
@@ -27,8 +26,8 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 ### Colour Scheme
 
-| Purpose             | Colour Code | Preview |
-|---------------------|-------------|---------|
+| Purpose             | Colour Code | Preview                                                   |
+| ------------------- | ----------- | --------------------------------------------------------- |
 | Background          | `#1a1a2e`   | ![#1a1a2e](https://singlecolorimage.com/get/1a1a2e/15x15) |
 | Tile Base           | `#16213e`   | ![#16213e](https://singlecolorimage.com/get/16213e/15x15) |
 | Highlight (Correct) | `#4ecca3`   | ![#4ecca3](https://singlecolorimage.com/get/4ecca3/15x15) |
@@ -37,14 +36,30 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 | Panel Background    | `#0f3460`   | ![#0f3460](https://singlecolorimage.com/get/0f3460/15x15) |
 | Tile Hover          | `#24345d`   | ![#24345d](https://singlecolorimage.com/get/24345d/15x15) |
 
+## Wireframes
 
+### Mobile
+
+- Main game page
+
+![screenshot of the main game page on a mobile screen](assets/images/mobile-wireframe.png)
+
+- instructions modal
+
+![screenshot of the instructions modal on a mobile screen](assets/images/mobile-instructions-wireframe.png)
+
+### Tablet
+
+- Main game page
+
+![screenshot of the main game page on a tablet screen](assets/images/tablet-plus-wireframe.png)
 
 ## Features
 
 **Core Features:**
 
 - A continuous path generated on the grid
-- The path is highlighted in sequence before the round begins and  when it is the player's turn it disappears 
+- The path is highlighted in sequence before the round begins and when it is the player's turn it disappears
 - Clear instructions on how to play the game
 - Player reproduce the path by selecting tiles
 - Immediate success/failure feedback
@@ -64,52 +79,50 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 - Toggles for sound / animations
 - Accessibility options: high‑contrast mode, keyboard navigation
 
-
 ## Technologies Used
 
- - HTML
- - CSS
- - JavaScript
- - Bootstrap 5
+- HTML
+- CSS
+- JavaScript
+- Bootstrap 5
 
+## Testing
 
- ## Testing
+### Google's Lighthouse Performance
 
- ### Google's Lighthouse Performance
+### Responsiveness
 
- ### Responsiveness
+### Browser Compatibility
 
- ### Browser Compatibility
+### Manual Testing
 
- ### Manual Testing
+### Code Validation
 
- ### Code Validation
+**HTML Validation:\***
 
- **HTML Validation:***
+**CSS Validation:**
 
- **CSS Validation:**
+## Bugs
 
- ## Bugs
+## Deployment
 
- ## Deployment
+### Deploying on GitHub Pages
 
- ###  Deploying on GitHub Pages 
-
- To publish this project live using GitHub Pages
+To publish this project live using GitHub Pages
 
     1. Push your project to a GitHub repository.
-    2. Open the repository on GitHub. 
-    3. Go to Settings → Pages. 
-    4. Under Source, select: - Branch: `main` - Folder `/root` 
+    2. Open the repository on GitHub.
+    3. Go to Settings → Pages.
+    4. Under Source, select: - Branch: `main` - Folder `/root`
     5. Click Save.
     6. Wait for GitHub Pages to build the site (usually under 1 minute).
-    7. A live link will appear at the top of the Pages settings page. 
-    
+    7. A live link will appear at the top of the Pages settings page.
+
     Your project is now deployed and publicly accessible
 
 ### Forking the Repository
 
- If you want to create your own copy of this project on GitHub:
+If you want to create your own copy of this project on GitHub:
 
     1. Go to the repository page.
     2. Click the Fork button in the top‑right corner.
@@ -117,17 +130,10 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 ### Cloning the Repository
 
- If you want to download the project to your local machine:
- 
+If you want to download the project to your local machine:
+
     1. Click the Code button on the repository page.
     2. Copy the HTTPS or SSH link.
     3. Run the git clone command in your terminal
 
- ## Credits
-
-
-
-
-
-
-
+## Credits
