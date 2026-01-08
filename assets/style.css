@@ -225,3 +225,156 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* ============================= */
+/* MOBILE RESPONSIVE STYLES */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .site-header,
+  .site-footer {
+    padding: 15px 10px;
+  }
+
+  .main-content {
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .github-icon {
+    font-size: 1.5rem;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+
+  .site-footer a {
+    font-size: 0.9rem;
+    margin: 0 5px;
+  }
+
+  /* Smaller grid for mobile */
+  #grid {
+    grid-template-columns: repeat(12, 22px);
+    grid-template-rows: repeat(12, 22px);
+    gap: 2px;
+  }
+
+  .tile {
+    width: 22px;
+    height: 22px;
+  }
+
+  .game-area-wrapper {
+    padding: 10px;
+  }
+
+  .blue-btn {
+    padding: 10px 20px;
+    min-width: 120px;
+    font-size: 0.9rem;
+  }
+
+  .bottom-controls {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .settings-drawer {
+    width: 100%;
+  }
+
+  .modal-content {
+    margin: 30% auto;
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .main-content {
+    padding: 10px 5px;
+  }
+
+  /* Extra small grid for very small screens */
+  #grid {
+    grid-template-columns: repeat(12, 18px);
+    grid-template-rows: repeat(12, 18px);
+    gap: 2px;
+  }
+
+  .tile {
+    width: 18px;
+    height: 18px;
+  }
+
+  .blue-btn {
+    padding: 8px 15px;
+    min-width: 100px;
+    font-size: 0.85rem;
+  }
+
+  .site-footer a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  #status-message {
+    font-size: 0.9rem;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+  .site-header,
+  .site-footer {
+    padding: 10px;
+  }
+
+  .site-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #grid {
+    grid-template-columns: repeat(12, 20px);
+    grid-template-rows: repeat(12, 20px);
+    gap: 2px;
+  }
+
+  .tile {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Always center Start / Reset buttons */
+.bottom-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap; /* allows stacking if space is tight */
+}
+
+/* On small screens, stack but keep centered */
+@media (max-width: 480px) {
+  .bottom-controls {
+    flex-direction: column;
+  }
+
+  .bottom-controls .blue-btn {
+    width: 100%;
+    max-width: 260px; /* keeps buttons from being too wide */
+  }
+}
