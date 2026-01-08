@@ -88,6 +88,14 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 ### Google's Lighthouse Performance
 
+Mobile
+
+![screenshot of the main game page on a mobile screen](assets/images/mobile%20testing.png)
+
+Desktop
+
+![screenshot of the main game page on a mobile screen](assets/images/desktop%20testing.png)
+
 ### Responsiveness
 
 ### Browser Compatibility
