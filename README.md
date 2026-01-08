@@ -100,6 +100,22 @@ Desktop
 
 ### Browser Compatibility
 
+This project was tested for cross-browser compatibility using automated analysis tools and manual checks.
+
+The following browsers and platforms were tested:
+-Chrome
+-Firefox
+-Edge
+-Safari
+-Opera
+-iOS Safari
+-Android Chrome
+
+Result:
+No critical, major, or minor browser compatibility issues were detected across the tested browsers.
+
+![screenshot of Browser compatibility](assets/images/browser-compatibility.webp)
+
 ### Manual Testing
 
 ### Code Validation
@@ -197,7 +213,11 @@ If you want to download the project to your local machine:
   https://developer.chrome.com/docs/lighthouse/
 - **Am I Responsive** (ui.dev) – used to generate responsive project screenshots  
   https://ui.dev/amiresponsive
+- **Browser Compatibility**  
+  https://www.powermapper.com/
 
+
+  
 ### Typography
 
 - Fonts provided by **Google Fonts**  
