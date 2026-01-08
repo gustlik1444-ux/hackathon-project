@@ -32,7 +32,6 @@ This project is a memory game where the player observes a highlighted path on a 
 
 ![screenshot of the main game page on a tablet screen](assets/images/tablet-plus-wireframe.png)
 
-
 ### Typography
 
 The project uses a clean, modern sans‑serif font stack for maximum readability across devices and operating systems.
@@ -46,13 +45,12 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 | Purpose             | Colour Code | Preview                                                   |
 | ------------------- | ----------- | --------------------------------------------------------- |
 | Background          | `#ffffff`   | ![#ffffff](https://singlecolorimage.com/get/ffffff/15x15) |
-| Tile Color           | `#f0f0f0`   | ![#f0f0f0](https://singlecolorimage.com/get/f0f0f0/15x15) |
+| Tile Color          | `#f0f0f0`   | ![#f0f0f0](https://singlecolorimage.com/get/f0f0f0/15x15) |
 | Highlight (Correct) | `#4ecca3`   | ![#4ecca3](https://singlecolorimage.com/get/4ecca3/15x15) |
 | Error (Incorrect)   | `#e94560`   | ![#e94560](https://singlecolorimage.com/get/e94560/15x15) |
 | Text Colour         | `#333333`   | ![#333333](https://singlecolorimage.com/get/333333/15x15) |
 | Panel Background    | `#e0e0e0`   | ![#e0e0e0](https://singlecolorimage.com/get/e0e0e0/15x15) |
-| Wireframe          | `#2e31ff`   | ![#2e31ff](https://singlecolorimage.com/get/2e31ff/15x15) |
-
+| Wireframe           | `#2e31ff`   | ![#2e31ff](https://singlecolorimage.com/get/2e31ff/15x15) |
 
 ## Features
 
@@ -98,9 +96,13 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 ### Code Validation
 
-**HTML Validation:\***
+**HTML Validation:**
+
+![screenshot of HTML validation passing](assets/images/html-validation.png)
 
 **CSS Validation:**
+
+![screenshot of CSS validation passing](assets/images/css-validation.png)
 
 ## Bugs
 
@@ -139,40 +141,48 @@ If you want to download the project to your local machine:
 ## Credits and Acknowledgements
 
 ### Wireframing
+
 - Wireframes were created using **draw.io**  
   https://www.drawio.com/
 
 ### Development Support & Ideation
+
 - **GitHub Copilot** and **ChatGPT** were used throughout development for coding assistance, debugging support, and generating and refining user story ideas.  
   https://github.com/features/copilot  
   https://chat.openai.com/
 
 ### Version Control
+
 - **GitHub** was used for source control and project version management.  
   https://github.com/
 
 ### Icons
+
 - Footer icons provided by **Font Awesome**  
   https://fontawesome.com/
 - Avatar icons sourced from **Flaticon**  
   https://www.flaticon.com/free-icons/avatar
 
 ### Frontend Framework & Styling
+
 - **Bootstrap** was used for layout and responsive design  
   https://getbootstrap.com/
 - Custom styling implemented using **HTML** and **CSS**
 
 ### Validation & Testing
+
 - **W3C HTML Validator**  
   https://validator.w3.org/
 - **W3C CSS Validator**  
   https://jigsaw.w3.org/css-validator/
 
 ### Development Environment
+
 - **Visual Studio Code (VS Code)** used as the primary IDE  
   https://code.visualstudio.com/
 
 ### Performance, Debugging & Responsiveness Tools
+
 - **Google Chrome DevTools**  
   https://developer.chrome.com/docs/devtools/
 - **Lighthouse**  
@@ -181,8 +191,10 @@ If you want to download the project to your local machine:
   https://ui.dev/amiresponsive
 
 ### Typography
+
 - Fonts provided by **Google Fonts**  
   https://fonts.google.com/
 
 ### Project Assets
+
 - All project screenshots and responsive layout images were captured and produced by the project author and collaborators.
