@@ -83,6 +83,10 @@ body {
   gap: 20px;
 }
 
+.main-content > p {
+  color: white;
+}
+
 .game-area-wrapper {
   background: var(--panel-bg);
   padding: 15px;
